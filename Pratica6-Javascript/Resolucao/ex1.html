@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ITW | P6 Ex1 | Calculadora</title>
+
+    <!--BOOTTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .card {width: 50%;}
+        .btn {width: 25%;}
+    </style>
+</head>
+<body>
+    <br/>
+    <div class="container">
+        <div class="card mx-auto">
+            <div class="card-header">
+                <input type="text" name="resultado" id="resultado" value="" placeholder="Resultado"/>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <input type="button" class="btn btn-outline-primary" value="1" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="2" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="3" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="+" onclick="add(this)"/>
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-outline-primary" value="4" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="5" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="6" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="-" onclick="add(this)"/>
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-outline-primary" value="7" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="8" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="9" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="*" onclick="add(this)"/>
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-outline-primary" value="C" onclick="reset()"/>
+                    <input type="button" class="btn btn-outline-primary" value="0" onclick="add(this)"/>
+                    <input type="button" class="btn btn-outline-primary" value="=" onclick="calculadora()"/>
+                    <input type="button" class="btn btn-outline-primary" value="/" onclick="add(this)"/>
+                </div>
+                <div class="card-footer">&copy; Gonçalo Matos 2018</div>
+
+                <script>
+                    window.onload = document.getElementById("resultado").disabled=true;
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script src="ex1.js"></script>
+    
+</body>
+</html>

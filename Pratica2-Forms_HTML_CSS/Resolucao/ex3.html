@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>P2, Ex3 | Formulario</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<style type="text/css">
+		body{
+			background-color: #F0F0F0;
+			text-align: center;
+			font-family: 'Open Sans', arial;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Informacao Pessoal</h1>
+	
+	<form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+		<dl>
+			<dt>Nome</dt>
+			<dd><input type="text" name="FirstName" placeholder="Escreva aqui o seu nome"/></dd>
+			<br/>
+			<dt>Sobrenome</dt>
+			<dd><input type="text" name="LastName" placeholder="Escreva aqui o seu sobrenome"/></dd>
+			<br/>
+			<dt>Palavra-passe</dt>
+			<dd><input type="password" name="Password" placeholder="Digite a palavra-passe"></dd>
+			<br/>
+			<dt>Comentarios</dt>
+			<dd><textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários"></textarea></dd>
+			<br/>
+			<dd><input type="Submit" name="Submit" value="Submeter"><input type="Reset" name="Reset" value="Limpar formulario"></dd>
+		</dl>
+	</form>
+</body>
+</html>

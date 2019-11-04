@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Gonçalo Matos">
+    <meta name="Description" content="Aula Prática 3/Exercício 1">
+    
+    <title>Index</title>
+    
+    <!--Fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
+    <style type="text/css">
+        /*Texto*/
+            /*Geral*/
+        h1, h3 {font-family: 'Lato', sans-serif;}
+        a, h2, h4, p {font-family: 'Open Sans', sans-serif;}
+
+            /*Particular*/
+        a,li {text-decoration: none; color:black;transition-duration: 0.4s;}
+        img {transition-duration: 1.0s;}
+
+        /*Elementos comuns a toda a página*/
+        body {margin: 0px; padding: 0px;}
+        div {margin: 0px; padding: 0px;}
+
+        /*Menu Top*/
+        #Menu {width: 100%;}
+        #Menu>ul {list-style-type: none; 
+        overflow: hidden;
+        margin: 0px;}
+        #Menu li {float:left; 
+        width: 20%; 
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;}
+        #Menu a:hover {color:#7cad3e;}
+        #Menu li:first-of-type{margin-left: 20%;}
+
+        /*Banner*/
+        #Banner {width: 100%; 
+        height: 200px;
+        background-image: url(https://static.ua.pt/idp/bg/b/005-min.jpg);
+        background-size: 100%; 
+        background-position: 50% 50%;
+        transition-duration: 1.0s;}
+        #Banner:hover {background-size: 105%;}
+        #BannerText {width: 50%; 
+        height: 50%;
+        background-color: rgb(255, 255, 255,0.8);
+        margin-left: auto; 
+        margin-right: auto;
+        position: relative; 
+        top:25%;}
+        #BannerText>h1,#BannerText>h4 {text-align: center;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        top:18%;}
+        #BannerText>h4 {color:#236477 ;}
+
+        /*Content e Advertising*/
+        #ContentADD {display: flex;
+        width: 100%;}
+
+        /*Content*/
+        #Content {width: 70%;
+        margin: 0px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;}
+        #Content text {text-align: left;}
+        #Content h3 {margin-bottom: 2px; font-size: x-large;}
+        #Content h4 {margin-top: 0px; font-size: small;color:#236477;}
+        #Content img {width: 500px;margin-left: auto;}
+        div.conteudo {padding-left: 40px;}
+        div.Centralizar {text-align: center;margin-bottom: 0px;}
+        p.legenda{font-size: small;margin-top: 0px;color: #236477;}
+
+        /*Advertising*/
+        #ADD {width:30%;
+        margin: 0px;
+        text-align: center;
+        background-image: url('https://images.unsplash.com/photo-1537861295351-76bb831ece99?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=450947424e5f27a436d647eb001c4ed5&amp;auto=format&amp;fit=crop&amp;w=751&amp;q=80');
+        background-size: 200%;
+        background-position: 85% 50%;
+        background-repeat: no-repeat;
+        }
+        #ADD h1 {position: relative;
+        color: white;
+        top: 80%;
+        }
+            
+        /*Footer*/
+        #Footer {width: 100%;
+        height: 60px;
+        text-align: center;
+        background-color: #cfdfda;
+        padding-top: 2px;
+        margin: 0px;}
+
+    </style>
+</head>
+
+<body>
+    <!--MENU TOP-->
+    <div id="Menu">
+        <ul>
+            <li><a href="ex1_index.html">Index</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="ex1_page2.html">Page 2</a></li>
+        </ul>
+    </div>
+
+    <!--BANNER-->
+    <div id="Banner" style="text-align: center">
+        <div id="BannerText">
+            <h1>Page 1</h1>
+            <h4>Isto é um banner</h4>
+        </div>
+    </div>
+
+    <!--CONTENT E ADVERTISING-->
+    <div id="ContentADD">
+
+            <!--CONTENT-->
+            <div id="Content">
+                <h3>Título do conteúdo</h3>
+                <h4>Subtítulo</h4>
+                <div class="conteudo">
+                <p>Texto do conteúdo</p>
+                <div class="Centralizar">
+                    <img src="https://images.unsplash.com/photo-1486122741729-1a39ece53a48?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e39e010e3ad5181b493681a919f5464d&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Imagem"/>
+                    <p class="legenda">Legenda</p>
+                </div>
+                </div>
+            </div>
+    
+            <!--ADVERTISING-->
+            <div id="ADD" >
+                <h1>Publicidade</h1>
+            </div>
+    
+        </div>
+
+    <div id="Footer">
+        <p>&copy; Gonçalo Matos 2018</p>
+    </div>
+</body>
+
+</html>

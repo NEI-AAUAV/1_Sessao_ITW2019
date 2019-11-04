@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>P2, Ex5 | Formulario 3.0</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<style type="text/css">
+		h1,footer{
+			text-align: center;
+		}
+		body{
+			background-color: #F0F0F0;
+			font-family: 'Open Sans', arial;
+		}
+		#MeiosTransporte{
+			width: 700px;
+		}
+		#CorPreferida{
+			width: 700px;
+		}
+	</style>
+</head>
+
+<body>
+	<form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+		<fieldset name="PersonalInfo">
+			<legend>Informacao Pessoal</legend>
+			<table>
+				<tr>
+					<td>Curso</td>
+					<td>
+						<select name="Curso">
+							<option value="LEI">Licenciatura em Engenharia Informatica</option>
+							<option value="MEECT">Mestrado Integrado em Engenharia de Computadores e Telematica</option>
+							<option value="MEEET">Mestrado Integrado em Engenharia Eletronica e Telecomunicacoes</option>
+							<option value="Outro">Outro</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td>
+						<input type="text" name="FirstName" placeholder="Digite o seu nome"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td>
+						<input type="text" name="LastName" placeholder="Digite o seu sobrenome"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>
+						<input type="password" name="Password" placeholder="Digite a sua palavra-passe"/>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="hidden">Hidden test</label></td>
+					<td><input type="hidden" id="hidden" name="hidden" placeholder="hidden camp" value="teste122"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Comments</legend>
+			<dl>	
+				<dd><textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentarios"></textarea></dd>
+			</dl>
+		</fieldset>
+
+		<table>
+			<tr>
+				<td id="MeiosTransporte">
+					<fieldset>
+						<legend>Meios de transporte</legend>
+						<input type="checkbox" name="Transport" value="Bicicleta">Bicicleta<br/>
+						<input type="checkbox" name="Transport" value="Carro">Carro<br/>
+						<input type="checkbox" name="Transport" value="Comboio">Comboio<br/>
+					</fieldset>
+				</td>
+				<td id="CorPreferida">
+					<fieldset>
+						<legend>Cor preferida</legend>
+						<input type="radio" name="FavouriteColor" value="Azul">Azul<br/>
+						<input type="radio" name="FavouriteColor" value="Verde">Verde<br/>
+						<input type="radio" name="FavouriteColor" value="Vermelho">Vermelho<br/>
+						<input type="radio" name="FavouriteColor" value="Outra">Outra<br/>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<dd style="text-align: center"><input type="Submit" name="Submit" value="Submeter"><input type="Reset" name="Reset" value="Limpar formulario"></dd>
+	</form>
+	<br/>
+	<footer>&copy; Goncalo Matos 2018</footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Gonçalo Matos">
+    <meta name="Description" content="Aula Prática 3/Exercício 1">
+    
+    <title>Index</title>
+    
+    <!--Fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="ex2_css.css">
+    
+</head>
+
+<body>
+    <!--BANNER-->
+    <div id="Banner" style="text-align: center">
+        <div id="BannerText">
+            <h1>INSCRIÇÃO</h1>
+            <h4>Junte-se a nós!</h4>
+        </div>
+    </div>
+
+    <!--CONTENT E ADVERTISING-->
+    <div id="ContentADD">
+        <div id="Content">
+            <h3>Boletim de inscrição</h3>
+            <h4>Preencha corretamente os seus dados</h4>
+            <form name="DadosPessoais" action="192.168.160.36/FormEcho.aspx" method="post">
+                <div id="formup">
+                    <div class="fltleft">
+                        <label>Nome</label>
+                    </div>
+                    <div class="fltright">
+                        <input type="text" name="nome" size="100" placeholder="Escreva aqui o seu nome"/>
+                    </div>
+                    <div class="fltleft">
+                            <label>Login</label>
+                    </div>
+                     <div class="fltright">
+                        <input type="text" name="login" size="100" placeholder="Escreva aqui o seu nome de utilizador"/>
+                    </div>
+                     <div class="fltleft">
+                        <label>Password</label>
+                    </div>
+                    <div class="fltright">
+                        <input type="password" name="Password" size="75" placeholder="Defina a sua palavra-passe"/>
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+
+                <div id="formdown">
+                    <div class="fltleft">
+                        <label>Disciplinas</label>
+                    </div>
+                    <div id="disciplinas_opcoes">
+                        <div class="fltleftrightside">
+                            <fieldset name="1.º Semestre | Curriculares">
+                                <legend>1.º Semestre | Curriculares</legend>
+                                <input type="checkbox" name="1S_Curriculares" value="ALGA"><label>Álgebra Linear e Geometria Analítica</label><br/>
+                                <input type="checkbox" name="1S_Curriculares" value="EF"><label>Elementos de Física</label><br/>
+                                <input type="checkbox" name="1S_Curriculares" value="CI"><label>Cálculo I</label><br/>
+                                <input type="checkbox" name="1S_Curriculares" value="ITW"><label>Introdução às Tecnologias Web</label><br/>
+                                <input type="checkbox" name="1S_Curriculares" value="FP"><label>Fundamentos de Programação</label><br/>
+                            </fieldset>
+                        </div>
+                        <div class="fltright">
+                            <fieldset name="2.º Semestre | Curriculares">
+                                    <legend>2.º Semestre | Curriculares</legend>
+                                    <input type="checkbox" name="2S_Curriculares" value="MAS"><label>Modelação e Análise de Sistemas</label><br/>
+                                    <input type="checkbox" name="2S_Curriculares" value="CII"><label>Cálculo II</label><br/>
+                                    <input type="checkbox" name="2S_Curriculares" value="MD"><label>Matemática Discreta</label><br/>
+                                    <input type="checkbox" name="2S_Curriculares" value="IAC"><label>Introdução à Arquitetura de Computadores</label><br/>
+                                    <input type="checkbox" name="2S_Curriculares" value="POO"><label>Programação Orientada a Objetos</label><br/>
+                                </fieldset>
+                        </div>
+                        <div class="fltleftrightside" id="margin10">
+                            <fieldset name="1.º Semestre | Opcionais" class="one">
+                                <legend>1.º Semestre | Opcionais</legend>
+                                <input type="radio" name="1S_Opcionais" value="Musica"><label>Música</label>
+                                <input type="radio" name="1S_Opcionais" value="Teatro"><label>Teatro</label>
+                                <input type="radio" name="1S_Opcionais" value="Cinema"><label>Cinema</label>
+                                <input type="radio" name="1S_Opcionais" value="Fotografia"><label>Fotografia</label>
+                            </fieldset>
+                        </div>
+                        <div class="fltright" id="onelinee">
+                            <fieldset name="2.º Semestre | Opcionais" class="one">
+                                <legend>2.º Semestre | Opcionais</legend>
+                                <input type="radio" name="2S_Opcionais" value="Musica"><label>Música</label>
+                                <input type="radio" name="2S_Opcionais" value="Teatro"><label>Teatro</label>
+                                <input type="radio" name="2S_Opcionais" value="Cinema"><label>Cinema</label>
+                                <input type="radio" name="2S_Opcionais" value="Fotografia"><label>Fotografia</label>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <br/>
+                    <input type="submit" name="Submit" value="Enviar" id="btn_s"/>
+                </div>
+            </form>
+        
+        <br/><br/><br/>
+        </div>
+
+        
+    
+        <!--ADVERTISING-->
+        <div id="ADD" >
+            <h1>Publicidade</h1>
+        </div>
+    </div>
+
+    
+    <div id="Footer">
+        <p>&copy; Gonçalo Matos 2018</p>
+    </div>
+</body>
+
+</html>
